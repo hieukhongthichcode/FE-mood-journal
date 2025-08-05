@@ -57,7 +57,7 @@ function Login() {
       setToken(token);
       setUser(user);
       console.log("✅ Đã cập nhật AuthContext");
-
+      console.log("✅ BACKEND_URL =", import.meta.env.VITE_BACKEND_URL);
       toast.success("✅ Đăng nhập thành công!");
       navigate("/home");
     } catch (err) {

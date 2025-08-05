@@ -19,7 +19,7 @@ const EditJournalForm = () => {
     const fetchJournal = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_BACKEND_URL}/api/journals/${id}`,
+          `${import.meta.env.VITE_NODE_API}/api/journals/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -33,7 +33,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-  `${import.meta.env.VITE_NODE_API}/api/auth/login`,
+  `${import.meta.env.VITE_BACKEND_URL}/api/auth/login`,
   formData
   );
 

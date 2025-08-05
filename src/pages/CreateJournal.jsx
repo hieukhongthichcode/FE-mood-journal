@@ -17,7 +17,7 @@ function CreateJournal() {
 
   try {
   const response = await axios.post(
-    `${import.meta.env.VITE_NODE_API}/api/journals`,
+    `${import.meta.env.VITE_BACKEND_URL}/api/journals`,
     {
       title,
       content,

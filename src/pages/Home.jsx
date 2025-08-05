@@ -27,7 +27,7 @@ function Home() {
 
     try {
       setLoading(true);
-      const res = await fetch(`${import.meta.env.VITE_NODE_API}/api/journals`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/journals`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,7 +53,7 @@ function Home() {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_NODE_API}/api/journals/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/journals/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

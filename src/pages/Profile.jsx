@@ -66,7 +66,7 @@ const Profile = () => {
 
   const saveProfile = async (name, avatar) => {
     try {
-      const res = await axios.put(`${import.meta.env.VITE_NODE_API}/api/auth/${user._id}`, {name,avatar,});
+      const res = await axios.put(`${import.meta.env.VITE_BACKEND_URL}/api/auth/${user._id}`, {name,avatar,});
 
 
       localStorage.setItem("user", JSON.stringify(res.data));
